@@ -1,0 +1,1 @@
+# AlphaDesk-EquityResearch-and-InvestmentMemoPlatform
