@@ -1,0 +1,1 @@
+""""ALphaDesk equity research platform"""
