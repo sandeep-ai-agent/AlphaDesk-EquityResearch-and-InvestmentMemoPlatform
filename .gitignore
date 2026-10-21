@@ -1,3 +1,10 @@
 
 # Local Python environment
-.venv/
+.venv
+# Downloaded source PDFs and extracted report text
+data/input/
+data/corpus/
+
+# Python-generated files
+__pycache__/
+*.py[cod]
