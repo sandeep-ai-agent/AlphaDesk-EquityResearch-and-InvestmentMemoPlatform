@@ -4,6 +4,18 @@ version = "0.1.0"
 requires-python = ">=3.11,<3.12"
 dependencies = [
     "langgraph>=1.2.15",
+    "numpy>=2.4.6",
     "pydantic>=2.14.1",
     "pymupdf>=1.28.2",
+    "sentence-transformers>=6.2.0",
+    "torch>=2.14.1",
 ]
+[tool.uv.sources]
+# Obtain PyTorch from its CPU-only package source.
+torch = { index = "pytorch-cpu" }
+
+[[tool.uv.index]]
+# Restrict this package source to explicitly assigned packages.
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
