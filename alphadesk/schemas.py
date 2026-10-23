@@ -33,9 +33,12 @@ class ResearchTask(TypedDict):
     status: str  # The current task status
 
 class ResearchState(TypedDict):
-    question: str
+    question: str   # Research Qurestion supplied by the user
     ticker: str
     research_task: NotRequired[ResearchTask] 
     # Added later by prepare_task.
     # It does not need to exist when execution starts.
+
+    # This is when Agent has responded with it's answer. we will keep history of it through STATE 
+    answer: NotRequired[str]
 
