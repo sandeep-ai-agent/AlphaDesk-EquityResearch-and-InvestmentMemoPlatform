@@ -1,6 +1,7 @@
 
 # Local Python environment
 .venv
+.env
 # Downloaded source PDFs and extracted report text
 data/input/
 data/corpus/
